@@ -1,0 +1,85 @@
+<html>
+<head>
+    <title>New Unit Test Custom Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .modal {
+            width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .modal-header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .modal-header h2 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .modal-header .close {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .modal-body {
+            padding: 20px;
+        }
+        .modal-body input[type="text"],
+        .modal-body select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .modal-footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .modal-footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-header">
+            <h2>New unit test custom challenge</h2>
+            <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+            <input type="text" value="Demo">
+            <div>
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                </select>
+            </div>
+            <div>
+                <label for="description">Short description:</label>
+                <input type="text" id="description" placeholder="Optional short description about this challenge...">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#">Click here to open the Java (JUnit) IDE and edit your code &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>
